@@ -13,6 +13,12 @@
   "author": "",
   "license": "ISC",
   "exports": {
-    "./entities/*": "./src/entities/*"
+    "./entities/*":  {
+      "types" : "./src/entities/*.ts",
+      "default" : "./dist/entities/*.js"
+    }
+  },
+  "dependencies": {
+    "@ebuddy/ts-config": "workspace:^"
   }
 }
